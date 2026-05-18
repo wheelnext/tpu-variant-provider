@@ -1,0 +1,22 @@
+[build-system]
+requires = [ "flit_core >=3.11" ]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "tpu-variant-provider"
+dynamic = ["description"]
+dependencies = []
+requires-python = ">=3.10"
+authors = [
+    { name = "Paul Ganssle", email = "pganssle@google.com" },
+]
+readme = "README.md"
+version = "0.1.0"
+license = { file = "LICENSE" }
+
+[project.entry-points.variant_plugins]
+tpu_variant_provider = "tpu_variant_provider.plugin:TpuVariantPlugin"
+
+[tool.pytest.ini_options]
+testpaths = ["tests/"]
+xfail_strict = true
