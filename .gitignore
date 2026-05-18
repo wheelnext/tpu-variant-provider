@@ -27,3 +27,8 @@ docs/_build/
 
 # ruff
 .ruff_cache/
+
+# Local developer setup / temporary files
+uv.lock
+.venv/
+venv/
