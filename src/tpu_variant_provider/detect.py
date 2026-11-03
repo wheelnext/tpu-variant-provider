@@ -46,7 +46,10 @@ def is_tpu_present() -> bool:
     """
     force_present = os.environ.get("TPU_VARIANT_PROVIDER_FORCE_PRESENT")
     if force_present is not None:
-        return force_present.casefold() in ("true", "1", "yes")
+        if force_present.casefold() in ("true", "1", "yes"):
+            return True
+        elif force_present.casefold() in ("false", "0", "no"):
+            return False
 
     # Standard Google TPU PCI device scan
     for vendor_path in glob.glob("/sys/bus/pci/devices/*/vendor"):
