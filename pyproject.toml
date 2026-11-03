@@ -6,7 +6,7 @@ build-backend = "flit_core.buildapi"
 name = "tpu-variant-provider"
 dynamic = ["description"]
 dependencies = []
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 authors = [
     { name = "Paul Ganssle", email = "pganssle@google.com" },
 ]
@@ -23,7 +23,7 @@ xfail_strict = true
 
 [tool.ruff]
 line-length = 88
-target-version = "py312"
+target-version = "py311"
 exclude = [
     ".git",
     ".tox",

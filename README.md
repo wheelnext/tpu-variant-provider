@@ -76,10 +76,10 @@ Tests are managed and run using `tox`.
 
 ### Running Tests with `uv`
 
-To run the test suite across the default Python 3.12 environment:
+To run the test suite across the default Python 3.11 environment:
 
 ```bash
-uvx --with tox-uv tox -e py312
+uvx --with tox-uv tox -e py311
 ```
 
 ### Running Linting & Style Checks
