@@ -29,6 +29,8 @@ _TPU_PCI_DEVICE_IDS: Final[set[str]] = {
     "0x0063",  # TPU v5e
     "0x006f",  # TPU v6e
     "0x0076",  # TPU7x
+    "0x0083",  # TPU 8i
+    "0x007c",  # TPU 8t
 }
 
 
